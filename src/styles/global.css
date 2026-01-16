@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "brevis";
+    src: url(../assets/fonts/Brevis-Regular.woff2);
+}
+@import "tailwindcss";
+
+@theme {
+    /* Typographie */
+    --font-lora: "Lora", serif;
+    --font-raleway: "Raleway", sans-serif;
+    --font-brevis: "brevis", serif;
+
+    /* Couleurs */
+    --color-white: #F3F3F3;
+    --color-gray: #3C3C3C;
+    --color-black: #1C1C1C;
+    --color-bronze: #B87333;
+}
+
+@layer base {
+
+    h1 {
+        font-family: var(--font-brevis);
+        font-size: 7.5rem;
+    };
+
+    h2 {
+        font-family: var(--font-brevis);
+        font-size: 5rem;
+    };
+    
+    h3 {
+        font-family: var(--font-brevis);
+        font-size: 3.75rem;
+    };
+
+    p {
+        font-family: var(--font-lora);
+        font-size: 1.25rem;
+    };
+};

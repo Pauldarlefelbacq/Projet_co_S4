@@ -1,0 +1,9 @@
+---
+const { lien, texte } = Astro.props;
+---
+<li>
+    <a class="group font-raleway uppercase w-min inline-block whitespace-nowrap" href={lien}>
+        {texte}
+        <div class="bg-black h-[1px] w-0 group-hover:w-full transition-all duration-300"></div>
+    </a>
+</li>
