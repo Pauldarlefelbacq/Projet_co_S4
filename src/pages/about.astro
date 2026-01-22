@@ -24,7 +24,58 @@ import Hero from "../assets/images/hero.webp";
         >
             Qui Sommes Nous ?
         </h1>
+    <!-- Section Hero "Qui Sommes Nous ?" -->
+    <section
+        class="relative h-[400px] md:h-[660px] flex items-center justify-center overflow-hidden"
+    >
+        <img
+            src={Hero.src}
+            alt="Hero À propos"
+            class="absolute inset-0 h-full object-cover mx-auto"
+        />
+        <h1
+            class="relative z-10 text-white text-4xl md:text-8xl font-bold uppercase"
+        >
+            Qui Sommes Nous ?
+        </h1>
     </section>
+
+    <!-- Section Notre Histoire -->
+    <section class="bg-[#1F3F3F3] py-32 px-6 mx-40">
+        <div class="max-w-7x">
+            <div
+                class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center"
+            >
+                <img class="w-100 h-full" src={about1.src} alt="" />
+
+                <!-- Texte -->
+                <div class="col-span-2">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-wide"
+                    >
+                        Notre Histoire
+                    </h2>
+                    <p
+                        class="text-gray-700 leading-relaxed text-sm md:text-base"
+                    >
+                        Fondé en août 2025, Aeshan's Tales est un studio de
+                        création multimédia et une association loi 1901 née de
+                        la passion pour la narration et l'innovation artistique.
+                        Tout commence en 2015, lorsque Antonin Jean (alias
+                        Ofghanirre) crée un serveur Minecraft où les joueurs
+                        explorent un univers unique : Aeshan. Pendant huit ans,
+                        cet univers grandit, s'enrichit et fédère une communauté
+                        avant la fermeture du serveur en 2023. Refusant de
+                        laisser disparaître ce monde, Samuel Charasse (alias
+                        Hasmed) relance le projet aux côtés d'Ofghanirre,
+                        donnant naissance à Aeshan's Tales. Depuis, le studio
+                        s'est structuré en association pour offrir un cadre
+                        collaboratif à tous ceux qui souhaitent continuer
+                        l'aventure.
+                    </p>
+                </div>
+            </div>
+        </div>
 
     <!-- Section Notre Histoire -->
     <section class="bg-[#1F3F3F3] py-32 px-6 mx-40">
@@ -105,34 +156,72 @@ import Hero from "../assets/images/hero.webp";
                 </div>
             </div>
         </div>
+
+    <!-- Section Notre Vision -->
+    <section class="bg-[#1C1C1C] py-16 px-6">
+        <div class="max-w-7xl mx-40">
+            <div
+                class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center"
+            >
+                <!-- Texte -->
+                <div class="col-span-2">
+                    <h2
+                        class="text-white text-3xl md:text-4xl font-bold mb-6 uppercase tracking-wide"
+                    >
+                        Notre Vision
+                    </h2>
+                    <p
+                        class="text-gray-300 leading-relaxed text-sm md:text-base mb-4"
+                    >
+                        Nous croyons en la force des histoires pour rassembler,
+                        inspirer et faire rêver. En tant qu'espace
+                        d'expérimentation créative, nous plaçons la narration au
+                        cœur de chaque projet.
+                    </p>
+                    <p
+                        class="text-gray-300 leading-relaxed text-sm md:text-base"
+                    >
+                        Notre ambition est de développer un univers fictif
+                        original, Aeshan, à travers des formats variés :
+                        fictions sonores, jeux de cartes, jeux vidéo, romans,
+                        bandes dessinées et jeux de société.
+                    </p>
+                </div>
+
+                <!-- Image -->
+                <div class="flex justify-end">
+                    <img
+                        src={about.src}
+                        alt="Aeshan's Tales"
+                        class="rounded-2xl w-100 h-160 object-cover"
+                    />
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Section Notre Communauté -->
     <section class="bg-[#1F3F3F3] py-16 pt-30 px-6 h-180">
         <div class="max-w-7xl mx-auto">
-            <div class="mx-[-120px]">
-                <h2
-                    class="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-wide"
-                >
-                    Notre Communauté
-                </h2>
-                <p
-                    class="text-gray-900 leading-relaxed text-sm md:text-base mb-4"
-                >
-                    Aeshan's Tales, c'est avant tout une communauté de créateurs
-                    et de passionnés. Nous valorisons la mise en commun des
-                    talents — artistes, écrivains, développeurs ou simples
-                    amateurs d'histoires — pour enrichir ensemble l'univers
-                    d'Aeshan.
-                </p>
-                <p
-                    class="text-gray-900 leading-relaxed text-sm md:text-base mb-12 max-w-5xl"
-                >
-                    Chacun peut y trouver sa place, contribuer à la création et
-                    participer à l'évolution d'un monde façonné par l'imaginaire
-                    collectif.
-                </p>
-            </div>
+            <h2
+                class="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-wide"
+            >
+                Notre Communauté
+            </h2>
+            <p class="text-gray-900 leading-relaxed text-sm md:text-base mb-4">
+                Aeshan's Tales, c'est avant tout une communauté de créateurs et
+                de passionnés. Nous valorisons la mise en commun des talents —
+                artistes, écrivains, développeurs ou simples amateurs
+                d'histoires — pour enrichir ensemble l'univers d'Aeshan.
+            </p>
+            <p
+                class="text-gray-900 leading-relaxed text-sm md:text-base mb-12 max-w-5xl"
+            >
+                Chacun peut y trouver sa place, contribuer à la création et
+                participer à l'évolution d'un monde façonné par l'imaginaire
+                collectif.
+            </p>
+
             <!-- Cards -->
             <div
                 class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto"
