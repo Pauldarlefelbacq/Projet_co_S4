@@ -2,14 +2,14 @@
 import MenuLinks from "../Components/MenuLinks.astro";
 import Logo from "../assets/logo_aeshans.svg";
 ---
-<header class="flex flex-col bg-[url(../assets/Background.webp)] bg-cover md:bg-none text-white h-svh md:h-fit *:mx-6 *:my-5">
+<header class="flex flex-col bg-[url(../assets/Background.webp)] bg-cover md:bg-none text-white h-svh md:h-fit *:mx-6 *:my-5 md:flex-row md:justify-around md:place-items-center">
     <div class="flex place-content-between mx-4">
         <Logo  />
-        <button>O</button>
+        <button class="md:hidden">O</button>
     </div>
-    <button class="bg-white text-black p-5 rounded-4xl font-raleway font-semibold text-base">Recherche Loupe</button>
+    <button class="bg-white text-black p-5 rounded-4xl font-raleway font-semibold text-base md:hidden">Recherche Loupe</button>
     <nav class="w-fit">
-        <ul class="flex flex-col *:my-3">
+        <ul class="flex flex-col md:flex-row *:my-3 md:gap-5 md:isolate md:mix-blend-difference">
             <MenuLinks lien = "#" texte = "Projets" />
             <MenuLinks lien = "#" texte = "À propos" />
             <MenuLinks lien = "#" texte = "recrutement" />
@@ -18,7 +18,7 @@ import Logo from "../assets/logo_aeshans.svg";
             <MenuLinks lien = "#" texte = "worldanvil" />
         </ul>
     </nav>
-    <div class="flex place-content-around">
+    <div class="flex place-content-around md:hidden">
         <a href="" class="bg-white py-2 px-4 rounded-4xl text-black font-semibold hover:bg-black hover:text-white transition-all">Connexion</a>
         <a href="" class="bg-black py-2 px-4 rounded-4xl font-semibold hover:bg-white hover:text-black transition-all">Inscription</a>
     </div>
