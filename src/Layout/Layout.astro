@@ -17,4 +17,12 @@ import Footer from "./Footer.astro";
 		<slot />
         <Footer />
 	</body>
+	<script>
+		import { gsap } from "gsap";
+		import { Observer } from "gsap/Observer";
+		import { ScrollTrigger } from "gsap/ScrollTrigger";
+		import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+		gsap.registerPlugin(Observer, ScrollTrigger, ScrollToPlugin);
+	</script>
 </html>
