@@ -1,0 +1,60 @@
+---
+import Layout from "../Layout/Layout.astro";
+import Hero from "../assets/images/hero.webp";
+import Logo from "../assets/icons/logo_aeshans.svg";
+---
+
+<Layout>
+    <section
+        class="relative h-[400px] md:h-[660px] flex items-center justify-center overflow-hidden"
+    >
+        <img
+            src={Hero.src}
+            alt="Hero Newsletter"
+            class="absolute inset-0 h-full object-cover mx-auto"
+        />
+        <div class="relative z-10 text-white">
+            <h1 class="text-5xl md:text-8xl font-bold uppercase mb-4 md:mb-8">
+                Newsletter
+            </h1>
+            <p class="text-base md:text-2xl max-w-xl">
+                RESTEZ INFORMÉ !<br />
+                NE MANQUEZ AUCUNE ACTUALITÉ D'AESHAN'S
+            </p>
+        </div>
+    </section>
+
+    <section class="mx-40 my-16 grid grid-cols-2">
+        <h2 class="text-5xl font-bold text-yellow-600 col-start-1 col-span-1 ">
+            Inscrivez-vous <br /><span class="text-black"
+                >à Notre Newsletter</span
+            >
+        </h2>
+
+        <ul
+            class="text-gray-700 leading-relaxed text-sm md:text-base py-8 col-start-1 col-span-1"
+        >
+            <li>Les dernières nouvelles de nos projets,</li>
+            <li>Des contenus inédits (artworks, extraits, making-of)</li>
+            <li>Des invitations à nos événements et lancements</li>
+        </ul>
+        <form class="flex flex-col sm:flex-row gap-4 col-start-1 col-span-1 row-start-3 row-span-1">
+            <input
+                type="email"
+                placeholder="Adresse Mail"
+                class="grow p-3 border border-gray-300 rounded"
+                required
+            />
+            <button
+                type="submit"
+                class="bg-black text-white p-3 rounded hover:bg-gray transition"
+            >
+                S'inscrire
+            </button>
+        </form>
+        <img class="relative col-start-2 col-span-2 ml-60" src={Logo.src} alt="">
+        <h3 class="text-3xl py-10 col-start-1 col-span-2 ">
+            Restez informé Ne manquez aucune actualité d’Aeshan’s Tales !
+        </h3>
+    </section>
+</Layout>

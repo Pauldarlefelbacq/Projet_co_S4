@@ -1,0 +1,22 @@
+---
+// Cardabout.astro ou le nom de composant de votre choix
+interface Props {
+    icon: string;
+    title: string;
+}
+
+const { icon, title } = Astro.props;
+---
+
+<div
+    class="bg-[#1C1C1C] rounded-2xl p-8 flex flex-col items-center justify-center gap-6 hover:scale-105 transition-transform duration-300"
+>
+    <div class="w-16 h-16">
+        <img src={icon} alt={title} class="w-full h-full object-contain" />
+    </div>
+    <h3
+        class="text-white text-xl font-medium uppercase tracking-wider text-center"
+    >
+        {title}
+    </h3>
+</div>

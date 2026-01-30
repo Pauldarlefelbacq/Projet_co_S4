@@ -1,0 +1,114 @@
+---
+import Layout from "../Layout/Layout.astro";
+import Hero from "../assets/images/hero.webp";
+---
+
+<Layout>
+    <section
+        class="relative h-[400px] md:h-[660px] flex items-center justify-center overflow-hidden"
+    >
+        <img
+            src={Hero.src}
+            alt="Hero Mentions Légales"
+            class="absolute inset-0 h-full object-cover mx-auto"
+        />
+        <div class="relative z-10 text-white">
+            <h1 class="text-5xl md:text-8xl font-bold uppercase mb-4 md:mb-8">
+                Mentions Légales
+            </h1>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Éditeur du site</h2>
+            <ul>
+                <li>Association loi 1901 déclarée à la préfecture du Doubs</li>
+                <li>
+                    Siège social : 10 rue Jacques Foillet, 25200 Montbéliard
+                </li>
+                <li>Date de création : 08/08/2025</li>
+                <li>N° RNA :</li>
+                <li>N° SIRET :</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Représentant Légal</h2>
+            <ul>
+                <li>Président de l’association : Samuel Charasse</li>
+                <li>Email : contact@aeshans-tales.fr</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Hébergement du Site</h2>
+            <ul>
+                <li>Hébergeur : Infomaniak Network SA</li>
+                <li>
+                    Adresse de l’hébergeur : Rue Eugène Marziano 25 1227 Les
+                    Acacias (GE)
+                </li>
+                <li>Siège de la société : Les Acacias, Genève, Suisse</li>
+                <li>Téléphone : +41 22 820 35 44</li>
+                <li>Site web : www.infomaniak.com</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Nom de domaine</h2>
+            <ul>
+                <li>Propriétaire : Aeshan’s Tales</li>
+                <li>Enregistré via Infomaniak</li>
+                <li>Date d’expiration : (à compléter)</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Propriété Intellectuelle</h2>
+            <p>
+                Le contenu original du site (textes, images, logos, œuvres
+                multimédias) est protégé par le droit d’auteur. Toute
+                reproduction ou utilisation sans autorisation est interdite,
+                sauf exceptions légales. Les œuvres dérivées de l’univers Aeshan
+                sont la propriété de l’association.
+            </p>
+        </div>
+        <div>
+            <h2>Données Personnelles</h2>
+            <p>
+                Conformément au RGPD, les données collectées (ex: formulaires,
+                newsletters) sont traitées par Aeshan’s Tales. Responsable du
+                traitement : [Nom et email]. Les données ne sont pas revendues.
+                Pour exercer vos droits (accès, rectification, suppression),
+                contactez-nous.
+            </p>
+        </div>
+        <div>
+            <h2>Cookies</h2>
+            <p>
+                Le site utilise des cookies pour améliorer l’expérience
+                utilisateur. Vous pouvez les désactiver via les paramètres de
+                votre navigateur.
+            </p>
+        </div>
+        <div>
+            <h2>Limitation de responsabilité</h2>
+            <p>
+                L’association ne saurait être tenue responsable des dommages
+                liés à l’utilisation du site ou des contenus externes. Les
+                projets artistiques (fictions sonores, jeux, etc.) sont proposés
+                à titre indicatif et peuvent évoluer.
+            </p>
+        </div>
+        <div>
+            <h2>Liens Externes</h2>
+            <p>
+                Les liens vers d’autres sites ne relèvent pas de la
+                responsabilité de Aeshan’s Tales.
+            </p>
+        </div>
+        <div>
+            <h2>Contact</h2>
+            <p>
+                Pour toute question :
+                    <mailto contact@aeshans-tales.fr>contact@aeshans-tales.fr</mailto>
+            </p>
+        </div>
+    </section>
+</Layout>

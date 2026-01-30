@@ -1,0 +1,226 @@
+---
+import Layout from "../Layout/Layout.astro";
+import Hero from "../assets/images/hero.webp";
+import Illustration1 from "../assets/images/soutenez.webp";
+import Illustration2 from "../assets/images/benevole.webp";
+import Illustration3 from "../assets/images/collaborez.webp";
+import Illustration4 from "../assets/images/illustrationaeshan.webp";
+---
+
+<Layout>
+    <section
+        class="relative h-[400px] md:h-[660px] flex items-center justify-center overflow-hidden"
+    >
+        <img
+            src={Hero.src}
+            alt="Hero Recrutement"
+            class="absolute inset-0 h-full object-cover mx-auto"
+        />
+        <div class="relative z-10 text-white">
+            <h1 class="text-5xl md:text-8xl font-bold uppercase mb-4 md:mb-8">
+                Recrutement
+            </h1>
+        </div>
+    </section>
+    <section>
+        <div class="mx-40 mt-16">
+            <h2 class="text-center">Devenez acteur de l’aventure</h2>
+            <p>
+                Aeshan’s Tales est une communauté en croissance, toujours à la
+                recherche de nouveaux talents et de passionnés. Que vous
+                souhaitiez contribuer à un projet, partager vos idées ou
+                simplement suivre notre actualité, il y a une place pour vous.
+            </p>
+        </div>
+    </section>
+    <section class="py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg border border-gray-100"
+                >
+                    <div class="flex justify-center mb-4">
+                        <img
+                            src={Illustration1.src}
+                            alt="Soutenez-nous"
+                            class="w-full"
+                        />
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3 text-center">
+                        Soutenez-nous
+                    </h3>
+                    <p class="text-sm text-gray-700 mx-auto px-4">
+                        <strong>Suivez-nous</strong> sur les réseaux sociaux, inscrivez-vous
+                        à notre <strong>newsletter</strong>, et partagez notre
+                        univers.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg border pb-10 border-gray-100"
+                >
+                    <div class="flex justify-center">
+                        <img
+                            src={Illustration2.src}
+                            alt="Devenez bénévole"
+                            class="w-full mb-4"
+                        />
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3 text-center">
+                        Devenez bénévole
+                    </h3>
+                    <p class="text-sm text-gray-700 mx-auto px-4">
+                        Rejoignez notre <strong>équipe</strong> et participez à la
+                        création de nos projets.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg border border-gray-100"
+                >
+                    <div class="flex justify-center mb-4">
+                        <img
+                            src={Illustration3.src}
+                            alt="Collaborez"
+                            class="w-full"
+                        />
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3 text-center">
+                        Collaborez
+                    </h3>
+                    <p class="text-sm text-gray-700 mx-auto px-4">
+                        Vous êtes <strong>artiste</strong>, <strong
+                            >développeur</strong
+                        >, ou <strong>auteur</strong> ? <br /> Proposez-nous vos idées
+                        !
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col items-center mx-40">
+            <h3 class="text-center text-4xl py-6 mt-6">
+                Ensemble, faisons d’Aeshan un univers ambitieux
+            </h3>
+            <img class="rounded-4xl" src={Illustration4.src} alt="" />
+            <h3 class="text-4xl py-12">Rejoignez notre communautée Discord</h3>
+        </div>
+    </section>
+    <section class="py-12 px-4 mb-12">
+        <div class="mx-40">
+            <div class="bg-black text-white rounded-3xl p-8 md:p-12">
+                <!-- Titre -->
+                <h2 class="text-3xl md:text-5xl font-bold text-center mb-6">
+                    Devenir <span class="text-yellow-600">Bénévole</span>
+                </h2>
+
+                <!-- Description -->
+                <p class="text-sm md:text-base mb-8">
+                    Si vous souhaitez participer à ce projet qu'est Aeshan Tales
+                    n'hésitez plus et rejoignez nous en tant que bénévole !
+                </p>
+
+                <!-- Formulaire -->
+                <form class="space-y-6">
+                    <!-- Ligne 1 : Prénom et Nom -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label
+                                for="prenom"
+                                class="block text-sm font-semibold mb-2 uppercase"
+                            >
+                                Prénom
+                            </label>
+                            <input
+                                type="text"
+                                id="prenom"
+                                name="prenom"
+                                class="w-full px-4 py-3 rounded-lg bg-white text-gray-900 focus:outline-none"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label
+                                for="nom"
+                                class="block text-sm font-semibold mb-2 uppercase"
+                            >
+                                Nom
+                            </label>
+                            <input
+                                type="text"
+                                id="nom"
+                                name="nom"
+                                class="w-full px-4 py-3 rounded-lg bg-white text-gray-900 focus:outline-none"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Ligne 2 : Téléphone et Email -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label
+                                for="telephone"
+                                class="block text-sm font-semibold mb-2 uppercase"
+                            >
+                                Numéro de téléphone
+                            </label>
+                            <input
+                                type="tel"
+                                id="telephone"
+                                name="telephone"
+                                class="w-full px-4 py-3 rounded-lg bg-white text-gray-900 focus:outline-none"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label
+                                for="email"
+                                class="block text-sm font-semibold mb-2 uppercase"
+                            >
+                                Mail
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="w-full px-4 py-3 rounded-lg bg-white text-gray-900 focus:outline-none"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label
+                            for="message"
+                            class="block text-sm font-semibold mb-2 uppercase"
+                        >
+                            Message
+                        </label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            class="w-full px-4 py-3 rounded-lg bg-white text-gray-900 focus:outline-none resize-none"
+                            required></textarea>
+                    </div>
+
+                    <!-- Bouton Submit -->
+                    <div>
+                        <button
+                            type="submit"
+                            class="bg-yellow-600 hover:bg-orange-600 text-white font-bold uppercase px-8 py-3 transition-colors duration-200"
+                        >
+                            Soumettre
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</Layout>

@@ -1,0 +1,291 @@
+---
+import Layout from "../Layout/Layout.astro";
+import Hero from "../assets/images/hero.webp";
+---
+
+<Layout>
+    <section
+        class="relative h-[400px] md:h-[660px] flex items-center justify-center overflow-hidden"
+    >
+        <img
+            src={Hero.src}
+            alt="Hero Politique de Confidentialité"
+            class="absolute inset-0 h-full object-cover mx-auto"
+        />
+        <div class="relative z-10 text-white">
+            <h1
+                class="text-5xl md:text-8xl font-bold uppercase mb-4 md:mb-8 text-center leading-32"
+            >
+                Politique de <br /> Confidentialité
+            </h1>
+        </div>
+    </section>
+    <section class="container mx-40 px-4 py-8 grid grid-cols-3">
+        <div class="col-span-2 py-12">
+            <ol class="numbered-list space-y-8">
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">Introduction</h2>
+                    <p>
+                        Aeshan's Tales attache une grande importance à la
+                        protection de vos données personnelles. La présente
+                        politique de confidentialité explique quelles
+                        informations nous collectons, comment nous les utilisons
+                        et quels sont vos droits lorsque vous utilisez notre
+                        site et nos services, notamment via la connexion avec
+                        Discord. En accédant à notre site ou en utilisant nos
+                        services, vous acceptez les termes de cette politique.
+                    </p>
+                </li>
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">
+                        Responsable du traitement
+                    </h2>
+                    <ul class="space-y-2">
+                        <li>
+                            Aeshan's Tales – Studio et association de création
+                            multimédia
+                        </li>
+                        <li>Email : adressemail</li>
+                        <li>
+                            Adresse : 10 rue Jacques Foillet, 25200 Montbéliard
+                        </li>
+                        <li>
+                            Le responsable du traitement des données est
+                            l'association Aeshan's Tales.
+                        </li>
+                    </ul>
+                </li>
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">Données collectées</h2>
+                    <ol class="sub-numbered-list space-y-4">
+                        <li>
+                            <strong>Données fournies directement</strong>
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>Nom d'utilisateur ou pseudonyme.</li>
+                                <li>
+                                    Adresse e-mail (si vous la fournissez
+                                    directement ou via Discord).
+                                </li>
+                                <li>
+                                    Messages envoyés via les formulaires de
+                                    contact ou les espaces communautaires.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Données collectées automatiquement</strong>
+                            <p class="mt-2">
+                                Lors de votre navigation sur notre site :
+                            </p>
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>
+                                    Adresse IP, type de navigateur, système
+                                    d'exploitation.
+                                </li>
+                                <li>
+                                    Données de connexion et statistiques
+                                    d'utilisation (pages visitées, durée de
+                                    connexion, etc.).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong
+                                >Données issues de la connexion Discord</strong
+                            >
+                            <p class="mt-2">
+                                Si vous choisissez de vous connecter via
+                                Discord, nous recueillons uniquement les
+                                informations nécessaires à l'authentification :
+                            </p>
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>Votre identifiant Discord.</li>
+                                <li>
+                                    Votre pseudonyme et image de profil Discord.
+                                </li>
+                                <li>
+                                    Votre adresse e-mail Discord (si autorisée
+                                    par vos paramètres).
+                                </li>
+                            </ul>
+                            <p class="mt-2">
+                                Ces informations sont utilisées uniquement pour
+                                faciliter la connexion et vous identifier sur le
+                                site.
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">
+                        Finalités du traitement
+                    </h2>
+                    <p>Les données collectées sont utilisées pour :</p>
+                    <ul class="list-disc pl-6 mt-2 space-y-1">
+                        <li>Gérer l'accès et la connexion à votre compte.</li>
+                        <li>
+                            Améliorer nos services et votre expérience
+                            utilisateur.
+                        </li>
+                        <li>
+                            Vous informer des activités et projets de
+                            l'association.
+                        </li>
+                        <li>
+                            Garantir la sécurité du site et prévenir les abus.
+                        </li>
+                    </ul>
+                </li>
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">
+                        Base légale du traitement
+                    </h2>
+                    <p>
+                        Conformément au Règlement Général sur la Protection des
+                        Données (RGPD), le traitement repose sur :
+                    </p>
+                    <ul class="list-disc pl-6 mt-2 space-y-1">
+                        <li>
+                            Votre consentement explicite lors de la création de
+                            compte ou de la connexion.
+                        </li>
+                        <li>
+                            L'intérêt légitime de l'association pour la gestion
+                            de sa communauté.
+                        </li>
+                    </ul>
+                </li>
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">Partage des données</h2>
+                    <p>
+                        Vos données ne sont jamais vendues. <br /> Elles peuvent être
+                        partagées avec :
+                    </p>
+                    <ul class="list-disc pl-6 mt-2 space-y-1">
+                        <li>
+                            Des partenaires techniques (hébergeurs, outils
+                            analytiques, etc.) assurant la sécurité et le bon
+                            fonctionnement du site.
+                        </li>
+                        <li>
+                            Discord, dans le cadre de l'authentification et
+                            conformément à leur propre politique de
+                            confidentialité.
+                        </li>
+                    </ul>
+                </li>
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">
+                        Durée de conservation
+                    </h2>
+                    <p>Les données sont conservées :</p>
+                    <ul class="list-disc pl-6 mt-2 space-y-1">
+                        <li>
+                            Tant que votre compte est actif ou que vous
+                            participez aux activités de l'association.
+                        </li>
+                        <li>
+                            Ou jusqu'à ce que vous demandiez leur suppression.
+                        </li>
+                    </ul>
+                </li>
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">Vos droits</h2>
+                    <p>
+                        Conformément au RGPD, vous disposez des droits suivants
+                        :
+                    </p>
+                    <ul class="list-disc pl-6 mt-2 space-y-1">
+                        <li>
+                            Droit d'accès, de rectification et de suppression de
+                            vos données.
+                        </li>
+                        <li>
+                            Droit d'opposition et de limitation du traitement.
+                        </li>
+                        <li>Droit à la portabilité des données.</li>
+                    </ul>
+                    <p class="mt-2">
+                        Pour exercer vos droits, contactez-nous à : [adresse
+                        e-mail de contact].
+                    </p>
+                </li>
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">Cookies</h2>
+                    <p>Nous utilisons des cookies pour :</p>
+                    <ul class="list-disc pl-6 mt-2 space-y-1">
+                        <li>Mesurer la fréquentation du site.</li>
+                        <li>
+                            Améliorer la navigation et le confort d'utilisation.
+                        </li>
+                    </ul>
+                    <p class="mt-2">
+                        Vous pouvez à tout moment modifier vos préférences de
+                        cookies dans les paramètres de votre navigateur.
+                    </p>
+                </li>
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">Sécurité</h2>
+                    <p>
+                        Nous mettons en œuvre des mesures techniques et
+                        organisationnelles adaptées pour protéger vos données
+                        contre tout accès, perte ou divulgation non autorisés.
+                    </p>
+                </li>
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">Liens externes</h2>
+                    <p>
+                        Notre site peut contenir des liens vers d'autres sites
+                        (par ex. Discord, réseaux sociaux). Nous ne sommes pas
+                        responsables de leurs pratiques en matière de
+                        confidentialité.
+                    </p>
+                </li>
+                <li class="py-4">
+                    <h2 class="text-4xl font-bold mb-4">
+                        Modifications de la politique
+                    </h2>
+                    <p>
+                        La présente politique peut être mise à jour à tout
+                        moment. La date de dernière modification figure en haut
+                        de cette page. Nous vous encourageons à la consulter
+                        régulièrement pour rester informé.
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .numbered-list {
+        list-style: none;
+        counter-reset: item;
+    }
+
+    .numbered-list > li {
+        counter-increment: item;
+    }
+
+    .numbered-list > li h2::before {
+        content: counter(item) ". ";
+        font-weight: bold;
+        margin-right: 0.5rem;
+    }
+
+    .sub-numbered-list {
+        list-style: none;
+        counter-reset: subitem;
+    }
+
+    .sub-numbered-list > li {
+        counter-increment: subitem;
+    }
+
+    .sub-numbered-list > li strong::before {
+        content: counter(item) "." counter(subitem) " ";
+        font-weight: bold;
+        margin-right: 0.5rem;
+    }
+</style>
