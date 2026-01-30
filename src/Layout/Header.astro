@@ -12,10 +12,26 @@ import MenuLinks from "../Components/MenuLinks.astro";
             <MenuLinks lien="#" texte="forum" />
             <MenuLinks lien="/newsletter" texte="newsletter" />
             <MenuLinks lien="#" texte="worldanvil" />
+import Logo from "../assets/logo_aeshans.svg";
+---
+<header class="flex flex-col bg-[url(../assets/Background.webp)] bg-cover md:bg-none text-white h-svh md:h-fit *:mx-6 *:my-5">
+    <div class="flex place-content-between mx-4">
+        <Logo  />
+        <button>O</button>
+    </div>
+    <button class="bg-white text-black p-5 rounded-4xl font-raleway font-semibold text-base">Recherche Loupe</button>
+    <nav class="w-fit">
+        <ul class="flex flex-col *:my-3">
+            <MenuLinks lien = "#" texte = "Projets" />
+            <MenuLinks lien = "#" texte = "À propos" />
+            <MenuLinks lien = "#" texte = "recrutement" />
+            <MenuLinks lien = "#" texte = "forum" />
+            <MenuLinks lien = "#" texte = "newsletter" />
+            <MenuLinks lien = "#" texte = "worldanvil" />
         </ul>
     </nav>
-    <div>
-        <a href="">Connexion</a>
-        <a href="">Inscription</a>
+    <div class="flex place-content-around">
+        <a href="" class="bg-white py-2 px-4 rounded-4xl text-black font-semibold hover:bg-black hover:text-white transition-all">Connexion</a>
+        <a href="" class="bg-black py-2 px-4 rounded-4xl font-semibold hover:bg-white hover:text-black transition-all">Inscription</a>
     </div>
 </header>
