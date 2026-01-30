@@ -6,10 +6,11 @@ import Soundcloud from "../assets/socials/soundcloud.svg";
 import Instagram from "../assets/socials/instagram.svg";
 import Tiktok from "../assets/socials/tiktok.svg";
 ---
+
 <footer class="bg-black text-white flex flex-col *:mx-8 *:my-3">
     <h2>Aeshan's Tale</h2>
     <div class="*:my-4">
-        <p>Association loi 1901 </p>
+        <p>Association loi 1901</p>
         <p>Siège social : 10 rue Jacques Foillet, 25200 Montbéliard</p>
         <p>contact@aeshans-tales.fr</p>
         <p>Ensemble forgeons la créativité !</p>
@@ -18,22 +19,55 @@ import Tiktok from "../assets/socials/tiktok.svg";
     <div class="flex place-content-around">
         <div>
             <ul class="*:flex *:w-full">
-                <li><a class="flex" href=""><img src={Discord.src} alt="Logo de discord"> DISCORD</a></li>
-                <li><a class="flex" href=""><img src={Youtube.src} alt="Logo de youtube"> YOUTUBE</a></li>
-                <li><a class="flex" href=""><img src={Tiktok.src} alt="Logo de tiktok"> TIKTOK</a></li>
-                <li><a class="flex" href=""><img src={Soundcloud.src} alt="Logo de soundcloud"> SOUNDCLOUD</a></li>
-                <li><a class="flex" href=""><img src={Instagram.src} alt="Logo d'instagram"> INSTAGRAM</a></li>
+                <li>
+                    <a class="flex" href=""
+                        ><img src={Discord.src} alt="Logo de discord" /> DISCORD</a>
+                </li>
+                <li>
+                    <a class="flex" href=""
+                        ><img src={Youtube.src} alt="Logo de youtube" /> YOUTUBE</a>
+                </li>
+                <li>
+                    <a class="flex" href=""
+                        ><img src={Tiktok.src} alt="Logo de tiktok" /> TIKTOK</a>
+                </li>
+                <li>
+                    <a class="flex" href=""
+                        ><img src={Soundcloud.src} alt="Logo de soundcloud" /> SOUNDCLOUD</a>
+                </li>
+                <li>
+                    <a class="flex" href=""
+                        ><img src={Instagram.src} alt="Logo d'instagram" /> INSTAGRAM</a>
+                </li>
             </ul>
         </div>
         <div>
-            <img class="size-52" src={Aeshan.src} alt="Logo d'aeshans tale">
+            <img class="size-52" src={Aeshan.src} alt="Logo d'aeshans tale" />
         </div>
     </div>
     <div>
         <ul class="flex place-content-around *:uppercase">
-            <li><a class="group" href="">Mentions légales <div class="bg-white h-[1px] w-full group-hover:w-0 transition-all duration-300"></div></a></li>
-            <li><a class="group" href="">Cookies <div class="bg-white h-[1px] w-full group-hover:w-0 transition-all duration-300"></div></a></li>
-            <li><a class="group" href="">Politique de confidentialité <div class="bg-white h-[1px] w-full group-hover:w-0 transition-all duration-300"></div></a></li>
+            <li>
+                <a class="group" href="/mentionslegales"
+                    >Mentions légales <div
+                        class="bg-white h-[1px] w-full group-hover:w-0 transition-all duration-300"
+                    >
+                    </div></a>
+            </li>
+            <li>
+                <a class="group" href=""
+                    >Cookies <div
+                        class="bg-white h-[1px] w-full group-hover:w-0 transition-all duration-300"
+                    >
+                    </div></a>
+            </li>
+            <li>
+                <a class="group" href="/politiqueconfidentialite"
+                    >Politique de confidentialité <div
+                        class="bg-white h-[1px] w-full group-hover:w-0 transition-all duration-300"
+                    >
+                    </div></a>
+            </li>
         </ul>
     </div>
 </footer>
